@@ -1,3 +1,1 @@
-# Webdev Lecture 2025
-## 학번 : 1067
-## 이름 : jang younghu
+# 2025 opensource lecture
