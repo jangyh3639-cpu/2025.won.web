@@ -8,13 +8,17 @@
 <body>
 
     <div>
-        <input id="inp-num1"/> + <input id="inp-num2"/> = <input id="inp-result">    
+        <input id="inp-num1"/> - <input id="inp-num2"/> = <input id="inp-result">    
     </div>
 
-    
     <div> 
-        <button id="btn-submit"> sumbit </button> 
+        <button id="btn-submit"> minus </button> 
     </div>
+
+
+
+
+
 
 
     <script>
@@ -27,11 +31,13 @@
         btnSubmit.addEventListener('click',()=> {
             var num1 = parseInt(inpNum1.value);
             var num2 = parseInt(inpNum2.value);
-            var result = num1 + num2;
+            var result = num1 - num2;
             console.log(result) 
 
 
             inpResult.value = result
+
+
         })
     </script>
 
