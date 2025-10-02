@@ -8,7 +8,45 @@
 <body>
 
     <h1>Selector Example</h1>
+    <select id="select-city">
+        
+        <option value="1">서울</option>
+        <option value="2">천안</option>
+        <option value="3">세종</option>
+        <option value="4">공주</option>
+        <option value="5">익산</option>
+        <option value="6">정읍</option>
+        <option value="7">광주</option>
+
+
+    </select>
+
+
+
+    <button id="btn-submit">선택</button>
     
+
+
+    <p id="text-result">
+
+
+    </p>
+
+
+
+
+
+    <script>
+        var selectCity = document.getElementById("select-city")
+        var btnSubmit = document.getElementById("btn-submit")
+        var textResult = document.getElementById("text-result")
+        btnSubmit.addEventListener('click',()=>{
+            console.log(selectCity.value)
+
+            textResult.innerText = "출발역 : " + selectCity.value
+        })
+
+    </script>
     
 </body>
 </html>

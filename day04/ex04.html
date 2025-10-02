@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex04</title>
+</head>
+<body>
+    <h1>기차표 예약</h1>
+    
+    <h2>출발역</h2>
+    <div>
+        <input type="radio"name="grp-1" value="서울"/> <label>서울</label>
+        <input type="radio"name="grp-1" value="천안"/> <label>천안</label>
+        <input type="radio"name="grp-1" value="세종"/> <label>세종</label>
+        <input type="radio"name="grp-1" value="익산"/> <label>익산</label>
+
+    </div>
+
+    <h3>도착역</h3>
+    <div>
+        <select id="select-city">
+            <option value="광주">광주</option>
+            <option value="목포">목포</option>
+            <option value="여수">여수</option>       
+        </select>
+    </div>
+
+    <button id="btn-submit">제출</button>
+    <p id="text-result">결과 : </p>
+    <p id="text-result2"></p>
+
+
+
+    <script>
+        var btnSubmit = document.getElementById("btn-submit")
+        var textResult = document.getElementById("text-result")
+        var selectCity = document.getElementById("select-city")
+        var teextResult2 = document.getElementById("text-result2")
+
+        btnSubmit.addEventListener('click',()=>{
+            selectObj = document.querySelector("input[name='grp-1']:checked")
+            console.log(selectObj)
+            textResult.innerText = "출발역 : " + selectObj.value + "  도착역 : " + selectCity.value
+
+        
+        })
+
+    </script>
+
+</body>
+</html>
