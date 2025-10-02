@@ -36,12 +36,13 @@
         var btnSubmit = document.getElementById("btn-submit")
         var textResult = document.getElementById("text-result")
         var selectCity = document.getElementById("select-city")
-        var teextResult2 = document.getElementById("text-result2")
+        var textResult2 = document.getElementById("text-result2")
 
         btnSubmit.addEventListener('click',()=>{
             selectObj = document.querySelector("input[name='grp-1']:checked")
             console.log(selectObj)
-            textResult.innerText = "출발역 : " + selectObj.value + "  도착역 : " + selectCity.value
+            textResult.innerText = "출발역 : " + selectObj.value 
+            textResult2.innerText = "도착역 : " + selectCity.value
 
         
         })
