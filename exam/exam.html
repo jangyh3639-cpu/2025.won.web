@@ -9,6 +9,8 @@
     <style>
         body{
             background-color: blue;
+            margin: 0px;
+            padding: 0px;
         }
 
 
@@ -18,22 +20,32 @@
             font-Family: Arial , Helvetica , sans-serif;
             font-style: italic;
             font-weight: 500;
+            margin-left: 15px;
         }
         .system-title2 {
             color:white;
             font-size:30px;
-            font-Family: Arial , Helvetica , sans-serif;
+            font-Family: Arial,Helvetica , sans-serif;
             font-style: italic;
             font-weight: 500;
+            margin-left:20px;
         }
+        .mp-type-1{
+            margin-left: 20px;
+
+        }
+        .mp-type-2{
+            margin-left: 16px;
+        }
+    
         
 
     </style>
 
     <div class = "system-title">카운터</div>
     <div class = "system-title2" id="count-Text">count : 0</div>
-    <button id="btn-inc"> Inc(+) </button>
-    <button id="btn-reset"> Reset(0)</button>
+    <button id="btn-inc" class="mp-type-1">Inc(+) </button>
+    <button id="btn-reset" class="mp-type-2"> Reset(0)</button>
     
 
     <script>
