@@ -6,17 +6,38 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
 
-    <h1 id="count-Text"> count : 0 </h1>
+
+        .system-title {
+            color:black;
+            font-size:60px;
+            font-Family: Arial , Helvetica , sans-serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .system-title2 {
+            color:darkred;
+            font-size:30px;
+            font-Family: sans-serif,Arial,Helvetica;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+    </style>
+
+    <div class = "system-title">카운터</div>
+    <div class = "system-title2" id="count-Text">count : 0</div>
     <button id="btn-inc"> Inc(+) </button>
-    <button id="btn-dec"> Inc(-)</button>
     <button id="btn-reset"> Reset(0)</button>
     
 
     <script>
         var countText = document.getElementById("count-Text")
         var btnInc = document.getElementById("btn-inc")
-        var btnDec = document.getElementById("btn-dec")
         var btnReset = document.getElementById("btn-reset")
         var count = 0;
 
@@ -28,12 +49,6 @@
 
 
 
-        btnDec.addEventListener("click",()=>{
-            count = count-1
-            console.log(count)
-            countText.innerText = "count : " + count
-
-        })
 
 
         btnReset.addEventListener("click",()=>{

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div> <input id="text" type="text" /></div>
+    <p id="txt-result">결과 : </p>
+    <div><button id="btn-result"> 출력 : </button></div>
+
+    <script>
+        const Text = document.getElementById("text")
+        const txtResult = document.getElementById("txt-result")
+        const BtnResult = document.getElementById("btn-result")
+
+        BtnResult.addEventListener('click' , ()=> {
+            const Text2 = Text.value;
+            txtResult.textContent = "사용자 입력 값 : " + Text2;
+             
+        })
+
+
+    </script>
+    
+</body>
+</html>
